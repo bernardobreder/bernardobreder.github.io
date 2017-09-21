@@ -1,0 +1,20 @@
+body {
+    margin-top: 56px;
+}
+
+.container h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a.nav-link.active {
+    background-color: rgb(100,100,100) !important;
+}
+
+nav a {
+    color: rgb(255, 255, 255) !important;
+}
+
+nav a:houver, nav a:link, nav a:link, nav a:visited {
+    color: rgb(255, 255, 255) !important;
+}
