@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#master">Graduation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#master">Master</a>
                 </li>
             </ul>
             <span class="navbar-text">Navbar text with an inline element</span>
@@ -45,83 +45,53 @@
                             <dt class="col-sm-3">Name</dt>
                             <dd class="col-sm-9">Bernardo Breder</dd>
 
-                            <dt class="col-sm-3">Euismod</dt>
-                            <dd class="col-sm-9">
-                                <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                                <p>Donec id elit non mi porta gravida at eget metus.</p>
-                            </dd>
+                            <dt class="col-sm-3">Personal E-mail</dt>
+                            <dd class="col-sm-9"><a href="mailto:bernardobreder@gmail.com">bernardobreder@gmail.com</a></dd>
 
-                            <dt class="col-sm-3">Malesuada porta</dt>
-                            <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+                            <dt class="col-sm-3">Work E-mail</dt>
+                            <dd class="col-sm-9"><a href="mailto:bbreder@tecgraf.puc-rio.br">bbreder@tecgraf.puc-rio.br</a></dd>
 
-                            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                                sit amet risus.
-                            </dd>
+                            <dt class="col-sm-3">LinkedIn</dt>
+                            <dd class="col-sm-9"><a href="https://www.linkedin.com/in/bbreder/">https://www.linkedin.com/in/bbreder</a></dd>
+
+                            <dt class="col-sm-3">Current Occupation</dt>
+                            <dd class="col-sm-9">Developer at <a href="http://www.tecgraf.puc-rio.br">Tecgraf</a></dd>
+
+                            <dt class="col-sm-3">Graduation</dt>
+                            <dd class="col-sm-9">UFF - Ciência da Computação <a href="pub/graduation.pdf">[link]</a></dd>
+
+                            <dt class="col-sm-3">Master degree</dt>
+                            <dd class="col-sm-9">UFF - Ciência da Computação <a href="pub/master.pdf">[link]</a></dd>
                         </dl>
                     </div>
                 </div>
             </section>
-            <h1 id="fat">Profile</h1>
-
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-
-            <h4 id="mdo">@mdo</h4>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-
-            <h4 id="aaa">@aaa</h4>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
+            <h1 id="master">Graduation degree</h1>
+            <section>
+                <h4>Breder Programming Language <a href="pub/graduation.pdf">[link]</a></h4>
+                <p>Projects with specific requirements require specific programming languages. These programming languages should
+                    provide tools for a better implementation. Some projects aim at improving the modularity of its architecture,
+                    focusing on high level development while others require a better runtime performance, using low level
+                    programming features. </p>
+                <p>Breder Programming Language was designed to meet the requirements of projects that require high level and
+                    low level development by optimizing the interconnections between those levels. This work describes the
+                    characteristics of the Breder programming language and how to use it.</p>
+            </section>
+            <h1 id="master">Master degree</h1>
+            <section>
+                <h4>Ordering of the Submission of Concurrent Kernels to Maximize Utilization of GPU Resources  <a href="pub/master.pdf">[link]</a></h4>
+                <p>New generation of Architectures GPUs allow concurrent execution kernels on the same hardware. This feature
+                    can increases the power of these devices, since it makes possible the concurrent execution of different
+                    tasks on the same hardware. However, the hardware decisions about the order execution depends heavily
+                    the order at which the kernels are submitted, causing the utilization of the hardware is not optimized.
+                    This work propose a novel optimization approach to reorder the kernels submittion focusing on maximizing
+                    the resources utilization, improving the average turnaround time. The model the simulation of the kernels
+                    with the hardware resources modeling as a knapsack problems and use algorithm greedy and dynamic programming
+                    approach to solve them. The results are measure using kernels with different sizes and resource requirements,
+                    resulting a significant gains in the average turnaround time and system throughput compared with a standard
+                    execution of concurrent kernels.
+                </p>
+            </section>
         </div>
     </div>
 
