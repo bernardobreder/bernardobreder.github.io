@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -23,10 +24,25 @@
                     <a class="nav-link" href="#home">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#master">Graduation</a>
+                    <a class="nav-link" href="#graduation">Graduation</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#master">Master</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#paper">Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#language">Language</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#citizenship">Citizenship</a>
                 </li>
             </ul>
             <span class="navbar-text">Updated at 09/21/2017</span>
@@ -66,7 +82,7 @@
                     </div>
                 </div>
             </section>
-            <h1 id="master">Graduation degree</h1>
+            <h1 id="graduation">Graduation degree</h1>
             <section>
                 <h4>Breder Programming Language</h4>
                 <p>Projects with specific requirements require specific programming languages. These programming languages should
@@ -86,7 +102,8 @@
                     can increases the power of these devices, since it makes possible the concurrent execution of different
                     tasks on the same hardware. However, the hardware decisions about the order execution depends heavily
                     the order at which the kernels are submitted, causing the utilization of the hardware is not optimized.
-                    This work propose a novel optimization approach to reorder the kernels submittion focusing on maximizing
+                </p>
+                <p>This work propose a novel optimization approach to reorder the kernels submittion focusing on maximizing
                     the resources utilization, improving the average turnaround time. The model the simulation of the kernels
                     with the hardware resources modeling as a knapsack problems and use algorithm greedy and dynamic programming
                     approach to solve them. The results are measure using kernels with different sizes and resource requirements,
@@ -95,6 +112,96 @@
                 </p>
                 <p><a href="pub/master.pdf">[3] Master Defense Documentation</a></p>
                 <p><a href="pub/master-slide.pdf">[4] Master Defense Presentation</a></p>
+            </section>
+            <h1 id="paper">Papers</h1>
+            <section>
+                <h4>Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</h4>
+                <p>The increasing amount of resources available on current GPUs sparked new interest in the problem of sharing
+                    its resources by different kernels. While new generation of GPUs support concurrent kernel execution,
+                    their scheduling decisions are taken by the hardware at runtime. The hardware decisions, however, heavily
+                    depend on the order at which the kernels are submitted to execution.
+                </p>
+                <p>In this work, we propose a novel optimization approach to reorder the kernels invocation focusing on maximizing
+                    the resources utilization, improving the average turnaround time. We model the kernels assignments to
+                    the hardware resources as a series of knapsack problems and use dynamic programming approach to solve
+                    them. We evaluate our method using kernels with different sizes and resource requirements. Our results
+                    show significant gains in the average turnaround time and system throughput compared to the standard
+                    kernels submission implemented in modern GPUs.</p>
+                <p><a href="pub/paper/wscad_2016.pdf">[5] Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</a></p>
+                <p><a href="http://www.wscad-2016.ufs.br/pdfs/melhores_wscad_2016.pdf">[6] Melhores Artigos do WSCAD</a></p>
+            </section>
+            <section>
+                <h4>Breder Programming Language for iPhone Game Programming</h4>
+                <p>This paper, propose a new framework definition for programming to iPhone with simplicity and productively.
+                    With this way, the developer can create a application, thinking only the logic of the game, forgeting
+                    the difficulties of framework and native Language for programming to iPhone.</p>
+                <p> This framework has simple and objective features to ensure the practicality of programming for iPhone. For
+                    this, we implemented a specification based on typical game framework architectures, which meets these
+                    requirements by using a Programming Language.</p>
+                <p> The Objetive-C Language used for programming to iPhone is a low level Language[STEPHEN G. KOCHAN]. With this,
+                    the developer need to implement and manager many thinks in the environment that should not worry. Because
+                    of that, it will be good if the devel- oper can use a high level Language in which will only worry about
+                    the logic of the application.</p>
+                <p> In this paper, will be used the Breder Programming Language for implement this framework. It because, the
+                    Breder Language is a high level Language that has many features to ensure the further structuring of
+                    code and productivity [BREDER, B]. Moreover, this Language was developed to assist projects that require
+                    high effi- ciency in native method call deployed in some external library, that will be use for comunication
+                    with iPhone framework [BREDER, B].</p>
+                <p><a href="pub/paper/sbgames2010.pdf">[7] Breder Programming Language for iPhone Game Programming</a></p>
+            </section>
+            <h1 id="experience">Experience</h1>
+            <section>
+                <h4>Java</h4>
+                <p>I have worked with many years with Java, programming in Desktop application for Petrobras (Tecgraf). I have
+                    worked with Web application for the Government (Tribunal de Justiça Federal). At now, i have six years
+                    working with Java. If you want more details about my experience, you can contact me. For more information,
+                    contact me.</p>
+                <h4>iOS MacOs</h4>
+                <p>I have created a application with Beacon with great interface and usability. In this project called BlueStar
+                    manager the location of the Beacon with the products around you.</p>
+                <p>Now i am creating another big application that will finished in one year to be use, which this project is
+                    private. For more information, contact me.</p>
+                <h4>Javascript</h4>
+                <p>I have big experience with javascript for make dynamic web site. For more information, contact me.</p>
+            </section>
+            <h1 id="language">Work</h1>
+            <section>
+                <h4>Fluence English</h4>
+                <p>Cursor and International Experience and Advanced Certificate. Travels to Italy and France. Write a paper
+                    and approved to International Conference in Argentina.</p>
+            </section>
+            <h1 id="language">Language</h1>
+            <section>
+                <h4>Tecgraf PUC-RIO (2007 - now) - System Analyst</h4>
+                <p>Developer with Java and Oracle for Petrobras. The software is a Desktop Application and a RMI Server.</p>
+
+                <h4>Teach (2012 - 2012) - Centro Universitário Plínio Leite</h4>
+                <p>Computer Graphic in 2012/01 with 80 hours</p>
+                <p>Algorithm and Programming in 2012/01 with 80 hours</p>
+                <p>Computer Graphic in 2012/02 with 80 hours</p>
+                <p>Construction of Algorithm in 2012/02 with 80 hours</p>
+
+                <h4>Vitrinii (2012 - now) Developer and Engineer</h4>
+                <p>Java and Javascript Developer of the Vitrinii.com</p>
+                <p>Software Engineer of the Vitrinii.com</p>
+
+                <h4>Brepi (2011 - 2012) Developer and Engineer</h4>
+                <p>Developer with Java the Xkeeping.com</p>
+                <p>Software Engineer of the Xkeeping.com</p>
+
+                <h4>Tribunal de Justiça Federal (2006 - 2007 ) System Analyst</h4>
+                <p>Developer with Java for Internal System</p>
+                <p>Web system built with Java Server</p>
+
+                <h4>Xerox Company (2005 - 2006)</h4>
+                <p>Developer with Java and Oracle for Programming Language</p>
+                <p>Developer and Creator of the Software Compiler</p>
+                <p>This software compile a generic source code and generate a Report of the Company based with your Database</p>
+            </section>
+            <h1 id="citizenship">Citizenship</h1>
+            <section>
+                <h4>Brazilian (Native)</h4>
+                <h4>Italian</h4>
             </section>
         </div>
     </div>
@@ -105,9 +212,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-    <script>
-        $('body').scrollspy({ target: '#navbar-example2' })
-    </script>
 </body>
 
 </html>
