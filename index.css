@@ -1,32 +1,72 @@
+body {
+    background-image: url("pub/img/bgcolor.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+}
+
 .container {
     margin-top: 20px;
+}
+
+.container {
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.container dt {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .container h1 {
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    margin: 2em 0px 2em 0px;
     padding: 20px 20px 20px 20px;
     font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+.container h1:first-child {
+    margin-top: 0px;
 }
 
 .container h4 {
     font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
     list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.container h1 {
-    font-family: 'Quicksand', sans-serif;
+.container section article {
+    color: lightgray;
 }
 
-.container p {
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 0.5em;
+.container section article:hover {
+    color: black;
 }
 
 .container section {
     margin: 20px 0px 20px 0px;
+}
+
+.container .reference p {
+    margin-bottom: 0px;
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+nav .nav-item, nav .navbar-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 nav a.nav-link.active {
@@ -37,6 +77,6 @@ nav a {
     color: rgb(255, 255, 255) !important;
 }
 
-nav a:houver, nav a:link, nav a:link, nav a:visited {
+nav a:hover, nav a:link, nav a:link, nav a:visited {
     color: rgb(255, 255, 255) !important;
 }
