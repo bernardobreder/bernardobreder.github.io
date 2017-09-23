@@ -18,6 +18,10 @@ body {
     font-weight: bold;
 }
 
+.container dt a {
+    font-weight: normal;
+}
+
 .container h1 {
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
@@ -70,6 +74,10 @@ body {
     color: blue;
 }
 
+.container dl dt p {
+    margin-bottom: 0px;
+}
+
 nav .nav-item, nav .navbar-text {
     font-family: 'Quicksand', sans-serif;
 }
@@ -89,4 +97,8 @@ nav a {
 
 nav a:hover, nav a:link, nav a:link, nav a:visited {
     color: rgb(255, 255, 255) !important;
+}
+
+kbd {
+    background-color: rgb(175, 175, 175);
 }
