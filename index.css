@@ -65,7 +65,7 @@ body {
     padding-top: 0px;
 }
 
-.container .reference p {
+.container references p {
     margin-bottom: 0px;
 }
 
@@ -99,12 +99,24 @@ nav a:hover, nav a:link, nav a:link, nav a:visited {
     color: rgb(255, 255, 255) !important;
 }
 
-time, kbd {
-    background-color: rgb(175, 175, 175);
+time, label {
+    background-color: rgb(180, 180, 180);
     text-transform: uppercase;
-    padding: .2rem .4rem;
+    padding: .1rem .2rem;
+    display: inline-block;
+    margin-bottom: 0px;
     font-size: 75%;
     color: #fff;
     border-radius: .2rem;
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    cursor: default;
+}
+
+@media print {
+    .container h1 {
+        page-break-before: always;
+    }
+    .container h1:first-child {
+        page-break-before: inherit;
+    }
 }
