@@ -99,6 +99,12 @@ nav a:hover, nav a:link, nav a:link, nav a:visited {
     color: rgb(255, 255, 255) !important;
 }
 
-kbd {
+time, kbd {
     background-color: rgb(175, 175, 175);
+    text-transform: uppercase;
+    padding: .2rem .4rem;
+    font-size: 75%;
+    color: #fff;
+    border-radius: .2rem;
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
