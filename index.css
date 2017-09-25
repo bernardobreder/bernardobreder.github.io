@@ -65,6 +65,18 @@ body {
     padding-top: 0px;
 }
 
+.container section dl dt, .container section dl dd {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.container .profile dl dt, .container .profile dl dd {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 .container references p {
     margin-bottom: 0px;
 }
@@ -105,7 +117,7 @@ time, label {
     padding: .1rem .2rem;
     display: inline-block;
     margin-bottom: 0px;
-    font-size: 75%;
+    font-size: 50%;
     color: #fff;
     border-radius: .2rem;
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -118,5 +130,8 @@ time, label {
     }
     .container h1:first-child {
         page-break-before: inherit;
+    }
+    .container p {
+        page-break-inside: auto;
     }
 }
