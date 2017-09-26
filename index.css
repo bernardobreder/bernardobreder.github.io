@@ -121,8 +121,15 @@ time, label {
 }
 
 @media print {
+    .container {
+        margin: 0px;
+        padding: 0px;
+        max-width: 1140px;
+    }
     .container h1 {
         page-break-before: always;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .container h1:first-child {
         page-break-before: inherit;
