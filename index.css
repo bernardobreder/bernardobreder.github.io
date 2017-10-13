@@ -12,7 +12,6 @@ body {
 
 .container dt {
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .container dt a {
@@ -123,6 +122,9 @@ time, label {
     }
     .container section {
         margin: 10px 0px 10px 0px;
+    }
+    .container dt {
+        font-weight: normal;
     }
     references, .reference {
         display: none;
