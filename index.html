@@ -20,22 +20,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Profile</a>
+                <li class="nav-item short active">
+                    <a class="nav-link" href="#profile">Profile</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item medium active">
                     <a class="nav-link" href="#how-i-think">Think</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item short active">
                     <a class="nav-link" href="#master">Master</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item short active">
                     <a class="nav-link" href="#graduation">Graduation</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item medium active">
                     <a class="nav-link" href="#paper">Paper</a>
                 </li>
-                <li class="nav-item active cursor-pointer dropdown">
+                <li class="nav-item full active cursor-pointer dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Experience
                     </a>
@@ -46,20 +46,36 @@
                         <a class="dropdown-item" href="#experience-hardware">Hardware</a>
                     </div>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item full active">
                     <a class="nav-link" href="#proposal">Proposal</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item short active">
                     <a class="nav-link" href="#work">Work</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item short active">
                     <a class="nav-link" href="#language">Language</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item medium active">
                     <a class="nav-link" href="#citizenship">Citizenship</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item full active">
                     <a class="nav-link" href="#reference">References</a>
+                </li>
+                <li class="nav-item active">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-secondary btn-sm btn-light" data-toggle="tooltip" data-placement="bottom" title="Short version of Curriculum"
+                            onclick="onShortPaper()">
+                            <input type="radio" name="options" id="option1">Short</input>
+                        </label>
+                        <label class="btn btn-secondary btn-sm btn-warning" data-toggle="tooltip" data-placement="bottom" title="Medium version of Curriculum"
+                            onclick="onMediumPaper()">
+                            <input type="radio" name="options" id="option2">Medium</input>
+                        </label>
+                        <label class="btn btn-secondary btn-sm btn-success active" data-toggle="tooltip" data-placement="bottom" title="Complete version of Curriculum"
+                            onclick="onFullPaper()">
+                            <input type="radio" name="options" id="option3" checked>Full</input>
+                        </label>
+                    </div>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="This page was prepared to print. Press Ctrl+P.">
@@ -71,8 +87,8 @@
     </nav>
 
     <div class="container">
-        <h1 id="home">Profile</h1>
-        <section class="profile">
+        <section class="profile short">
+            <h1 id="profile">Profile</h1>
             <div class="row">
                 <div class="col-sm-3">
                     <img src="pub/img/photo.jpg" alt="my photo" class="img-thumbnail">
@@ -131,8 +147,8 @@
             </div>
         </section>
 
-        <h1 id="how-i-think">How I Think</h1>
-        <section>
+        <section class="how-i-think medium">
+            <h1 id="how-i-think">How I Think</h1>
             <p>I following the three step to develop any feature or solution of application. First you have to sit together
                 with the user to understand your world. It important to think how his brain work to understand and fell the
                 problem with the application. After understand what he want, you have to think how can you create the best
@@ -164,8 +180,8 @@
                     this project represent a timeline of my works. Sorry if it is too long.</p>
         </section>
 
-        <h1 id="master">Master degree</h1>
-        <section>
+        <section class="college short">
+            <h1 id="master">Master degree</h1>
             <h4>Ordering of the Submission of Concurrent Kernels to Maximize Utilization of GPU Resources</h4>
             <p>
                 <small>
@@ -187,7 +203,7 @@
                 a significant gains in the average turnaround time and system throughput compared with a standard execution
                 of concurrent kernels.
             </p>
-            <references>
+            <references class="medium">
                 <p>
                     <a href="pub/master.pdf">[3] Master Defense Documentation</a>
                 </p>
@@ -200,8 +216,8 @@
             </references>
         </section>
 
-        <h1 id="graduation">Graduation degree</h1>
-        <section>
+        <section class="college short">
+            <h1 id="graduation">Graduation degree</h1>
             <h4>Breder Programming Language</h4>
             <p>
                 <small>
@@ -217,7 +233,7 @@
             <p>Breder Programming Language was designed to meet the requirements of projects that require high level and low
                 level development by optimizing the interconnections between those levels. This work describes the characteristics
                 of the Breder programming language and how to use it.</p>
-            <references>
+            <references class="medium">
                 <p>
                     <a href="pub/graduation.pdf">[1] Graduation Defense Documentation</a>
                 </p>
@@ -233,8 +249,8 @@
             </references>
         </section>
 
-        <h1 id="paper">Papers</h1>
-        <section>
+        <section class="paper medium">
+            <h1 id="paper">Papers</h1>
             <h4>Maximizing the GPU Resource Usage by Reordering Concurrent Kernels Submission</h4>
             <p>
                 <small>
@@ -242,10 +258,6 @@
                     <label>C</label>
                     <label>Cuda</label>
                     <time>(Oct.2017)</time>
-                </small>
-            </p>
-            <p>Concurrency and Computation: Practice and Experience
-                <small>
                     <label>Under Review</label>
                 </small>
             </p>
@@ -258,9 +270,11 @@
                 problems and use dynamic programming approach to solve them. We evaluate our method using kernels with different
                 sizes and resource requirements. Our results show significant gains in the average turnaround time and system
                 throughput compared to the kernels submission implemented in modern GPUs.</p>
-            <p>
-                <a href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1532-0634">[115] Concurrency and Computation: Practice and Experience</a>
-            </p>
+            <references class="medium">
+                <p>
+                    <a href="http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1532-0634">[115] Concurrency and Computation: Practice and Experience</a>
+                </p>
+            </references>
 
             <h4>Resolvendo o Problema de Reordenação de Kernels Concorrentes na GPU Utilizando o Problema da Mochila</h4>
             <p>
@@ -280,9 +294,11 @@
                 problem. We evaluated the gains and costs of the greedy method compared to the dynamic programming method.
                 Our results show that the greedy method obtained good performance results with a lower execution overhead,
                 which can be a viable solution in large scale environments.</p>
-            <p>
-                <a href="http://www.sbpo2017.iltc.br/pdf/170702.pdf">[75] Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</a>
-            </p>
+            <references class="medium">
+                <p>
+                    <a href="http://www.sbpo2017.iltc.br/pdf/170702.pdf">[75] Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</a>
+                </p>
+            </references>
 
             <h4>Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</h4>
             <p>
@@ -304,7 +320,7 @@
                 evaluate our method using kernels with different sizes and resource requirements. Our results show significant
                 gains in the average turnaround time and system throughput compared to the standard kernels submission implemented
                 in modern GPUs.</p>
-            <references>
+            <references class="medium">
                 <p>
                     <a href="pub/paper/wscad_2016.pdf">[5] Maximizando o Uso dos Recursos de GPU Através da Reordenação da Submissão de Kernels Concorrentes</a>
                 </p>
@@ -343,7 +359,7 @@
                 method call deployed in some external library, that will be use for comunication with iPhone framework [BREDER,
                 B].
             </p>
-            <references>
+            <references class="medium">
                 <p>
                     <a href="pub/paper/sbgames2010.pdf">[7] Breder Programming Language for iPhone Game Programming</a>
                 </p>
@@ -361,15 +377,15 @@
                 paper the Breder Programming Language will be used to implement this framework. That is because the Breder
                 Language is a high level Language that has many features which ensure further productivity and structuring
                 of code.</p>
-            <references>
+            <references class="medium">
                 <p>
                     <a href="pub/paper/actas_wavi_2010.pdf">[9] Breder Programming Language for iPhone Game Programming</a>
                 </p>
             </references>
         </section>
 
-        <h1 id="experience-java">Experience - Java</h1>
-        <section>
+        <section class="experience full">
+            <h1 id="experience-java">Experience - Java</h1>
             <p>I am working to Tecgraf since 2007 for many years with Java and Oracle, programming to desktop application for
                 Petrobras.
             </p>
@@ -787,12 +803,15 @@
             </dl>
         </section>
 
-        <h1 id="experience-apple">Experience - iOS and MacOs</h1>
-        <section>
+        <section class="experience full">
+            <h1 id="experience-apple">Experience - iOS and MacOs</h1>
+            <div class="row">
+                <div class="col">
+                    <p class="pb-4">I have many experience with iPhone and MacOS development with some projects by company listed below ordered
+                        by the importance. Same project is continue and other was finished because what was made is enough.</p>
+                </div>
+            </div>
             <dl class="row">
-                <p class="pb-4">I have many experience with iPhone and MacOS development with some projects by company listed below ordered
-                    by the importance. Same project is continue and other was finished because what was made is enough.</p>
-
                 <dt class="col-sm-3">
                     <p>Statement Node
                         <a href="http://www.stmtnode.com">[13]</a>
@@ -925,11 +944,17 @@
                 </dt>
                 <dd class="col-sm-9">Day Cost is a application for control the cost of person per day. This application has a great input of rotine
                     cost that represent the top problem in this area of application.</dd>
+            </dl>
 
-                <p class="py-4">I have many experience with iPhone and MacOS development with some personal short projects separated by module
-                    listed below ordered by the name. This short projects was created by me to reuse the modules into others
-                    personal projects.</p>
+            <div class="row">
+                <div class="col">
+                    <p class="py-4">I have many experience with iPhone and MacOS development with some personal short projects separated
+                        by module listed below ordered by the name. This short projects was created by me to reuse the modules
+                        into others personal projects.</p>
+                </div>
+            </div>
 
+            <dl class="row">
                 <dt class="col-sm-3">
                     <p>Aes
                         <a href="https://github.com/bernardobreder/apple-aes">[14]</a>
@@ -1687,11 +1712,13 @@
             </dl>
         </section>
 
-        <h1 id="experience-web">Experience - Web</h1>
-        <p>This session is under constructor.</p>
+        <section class="experience full">
+            <h1 id="experience-web">Experience - Web</h1>
+            <p>This session is under constructor.</p>
+        </section>
 
-        <h1 id="experience-gpu">Experience - GPU</h1>
-        <section>
+        <section class="experience full">
+            <h1 id="experience-gpu">Experience - GPU</h1>
             <dl class="row">
                 <dt class="col-sm-3">
                     <p>Gpu Scheduler
@@ -1726,8 +1753,8 @@
             </dl>
         </section>
 
-        <h1 id="experience-hardware">Experience - Hardware</h1>
-        <section>
+        <section class="experience full">
+            <h1 id="experience-hardware">Experience - Hardware</h1>
             <dl class="row">
                 <dt class="col-sm-3">
                     <p>Hardware Simulator
@@ -1781,11 +1808,11 @@
             </dl>
         </section>
 
-        <h1 id="proposal">Project Proposal</h1>
-        <h4>Single Virtual Machile
-            <a href="pub/pdf/swas.pdf">[71]</a>
-        </h4>
-        <section>
+        <section class="proposal full">
+            <h1 id="proposal">Project Proposal</h1>
+            <h4>Single Virtual Machile
+                <a href="pub/pdf/swas.pdf">[71]</a>
+            </h4>
             <p>The project proposal is to create a web site development environment that integrates a new and unique programming
                 language into the project to a remote host coming from a remote server service.</p>
             <p>The main goal of the project is to "marry" between a unique programming language and a remote host, so that together
@@ -1803,8 +1830,8 @@
                 the capabilities of the machines in the face of running projects.</p>
         </section>
 
-        <h1 id="work">Work</h1>
-        <section>
+        <section class="work short">
+            <h1 id="work">Work</h1>
             <h4>Tecgraf PUC-RIO - System Analyst
                 <a href="http://www.tecgraf.puc-rio.br/en">[83]</a>
             </h4>
@@ -1886,8 +1913,8 @@
             <p>This software compile a generic source code and generate a Report of the Company based with your Database</p>
         </section>
 
-        <h1 id="language">Language</h1>
-        <section>
+        <section class="language short">
+            <h1 id="language">Language</h1>
             <dl class="row">
                 <dt class="col-sm-3">Fluence English</dt>
                 <dd class="col-sm-9">Cursor and International Experience and Advanced Certificate. Travels to Italy and France. Write a paper
@@ -1898,8 +1925,8 @@
             </dl>
         </section>
 
-        <h1 id="citizenship">Citizenship</h1>
-        <section>
+        <section class="citizenship medium">
+            <h1 id="citizenship">Citizenship</h1>
             <dl class="row">
                 <dt class="col-sm-3">Brazilian (Native)</dt>
                 <dd class="col-sm-9">I live all my life at Brazil.</dd>
@@ -1909,8 +1936,8 @@
             </dl>
         </section>
 
-        <h1 id="reference">References</h1>
-        <section class="reference">
+        <section class="reference full">
+            <h1 id="reference">References</h1>
             <references>
                 <p>
                     <a href="pub/graduation.pdf">[1] Graduation Defense Documentation</a>
@@ -2241,14 +2268,15 @@
         </section>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <script>
-        $('[data-toggle="tooltip"]').tooltip()
+        onBody()
     </script>
 </body>
 
