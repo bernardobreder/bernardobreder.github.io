@@ -55,14 +55,23 @@ function onGenericPaper(data) {
         $(".short").fadeIn("slow")        
         $(".medium").fadeIn("slow")
         $(".full").fadeIn("slow")
+        $(".short-button").addClass("btn-outline-secondary").removeClass("btn-secondary")
+        $(".medium-button").addClass("btn-outline-warning").removeClass("btn-warning")
+        $(".full-button").removeClass("btn-outline-success").addClass("btn-success")
     } else if (data.medium) {
         $(".short").fadeIn("slow")
         $(".medium").fadeIn("slow")
         $(".full").fadeOut("slow")
+        $(".short-button").addClass("btn-outline-secondary").removeClass("btn-secondary")
+        $(".medium-button").removeClass("btn-outline-warning").addClass("btn-warning")
+        $(".full-button").addClass("btn-outline-success").removeClass("btn-success")
     } else if (data.short) {
         $(".short").fadeIn("slow")
         $(".medium").fadeOut("slow")
         $(".full").fadeOut("slow")
+        $(".short-button").removeClass("btn-outline-secondary").addClass("btn-secondary")
+        $(".medium-button").addClass("btn-outline-warning").removeClass("btn-warning")
+        $(".full-button").addClass("btn-outline-success").removeClass("btn-success")
     }
 }
 

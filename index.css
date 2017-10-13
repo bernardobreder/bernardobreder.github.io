@@ -117,11 +117,14 @@ time, label {
         padding: 0px;
         max-width: 1140px;
     }
-    .container h1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .container section h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
     }
-    references {
+    .container section {
+        margin: 10px 0px 10px 0px;
+    }
+    references, .reference {
         display: none;
     }
 }
