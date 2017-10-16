@@ -129,4 +129,7 @@ time, label {
     references, .reference {
         display: none;
     }
+    .welcome {
+        display: none;
+    }
 }

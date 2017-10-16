@@ -1,74 +1,31 @@
 function onGenericPaper(data) {
-    // if (data.references) {
-    //     $("references").fadeIn("slow")
-    //     $(".reference").fadeIn("slow")
-    // } else {
-    //     $("references").fadeOut("slow")
-    //     $(".reference").fadeOut("slow")
-    // }
-    // if (data.profile) {
-    //     $(".profile").fadeIn("slow")
-    // } else {
-    //     $(".profile").fadeOut("slow")
-    // }
-    // if (data.howthink) {
-    //     $(".how-i-think").fadeIn("slow")
-    // } else {
-    //     $(".how-i-think").fadeOut("slow")
-    // }
-    // if (data.college) {
-    //     $(".college").fadeIn("slow")
-    // } else {
-    //     $(".college").fadeOut("slow")
-    // }
-    // if (data.paper) {
-    //     $(".paper").fadeIn("slow")
-    // } else {
-    //     $(".paper").fadeOut("slow")
-    // }
-    // if (data.experience) {
-    //     $(".experience").fadeIn("slow")
-    // } else {
-    //     $(".experience").fadeOut("slow")
-    // }
-    // if (data.proposal) {
-    //     $(".proposal").fadeIn("slow")
-    // } else {
-    //     $(".proposal").fadeOut("slow")
-    // }
-    // if (data.work) {
-    //     $(".work").fadeIn("slow")
-    // } else {
-    //     $(".work").fadeOut("slow")
-    // }
-    // if (data.language) {
-    //     $(".language").fadeIn("slow")
-    // } else {
-    //     $(".language").fadeOut("slow")
-    // }
-    // if (data.work) {
-    //     $(".citizenship").fadeIn("slow")
-    // } else {
-    //     $(".citizenship").fadeOut("slow")
-    // }
     if (data.full) {
-        $(".short").fadeIn("slow")        
+        $(".short").fadeIn("slow")
+        $(".short-only").fadeOut("slow")
         $(".medium").fadeIn("slow")
+        $(".medium-only").fadeOut("slow")
         $(".full").fadeIn("slow")
+        $(".full-only").fadeIn("slow")
         $(".short-button").addClass("btn-outline-secondary").removeClass("btn-secondary")
         $(".medium-button").addClass("btn-outline-warning").removeClass("btn-warning")
         $(".full-button").removeClass("btn-outline-success").addClass("btn-success")
     } else if (data.medium) {
         $(".short").fadeIn("slow")
+        $(".short-only").fadeOut("slow")
         $(".medium").fadeIn("slow")
+        $(".medium-only").fadeIn("slow")
         $(".full").fadeOut("slow")
+        $(".full-only").fadeOut("slow")
         $(".short-button").addClass("btn-outline-secondary").removeClass("btn-secondary")
         $(".medium-button").removeClass("btn-outline-warning").addClass("btn-warning")
         $(".full-button").addClass("btn-outline-success").removeClass("btn-success")
     } else if (data.short) {
         $(".short").fadeIn("slow")
+        $(".short-only").fadeIn("slow")
         $(".medium").fadeOut("slow")
+        $(".medium-only").fadeOut("slow")
         $(".full").fadeOut("slow")
+        $(".full-only").fadeOut("slow")
         $(".short-button").removeClass("btn-outline-secondary").addClass("btn-secondary")
         $(".medium-button").addClass("btn-outline-warning").removeClass("btn-warning")
         $(".full-button").addClass("btn-outline-success").removeClass("btn-success")
@@ -102,5 +59,7 @@ function refreshTooltip() {
 
 function onBody() {
     $('[data-toggle="tooltip"]').tooltip()
-    onFullPaper()
+    $(".full-only").hide()
+    $(".short-only").hide()
+    onMediumPaper()
 }

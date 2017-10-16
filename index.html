@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#how-i-think">How I Think</a>
                 </li>
                 <li class="nav-item medium active">
-                    <a class="nav-link" href="#how-i-think">Personal Project</a>
+                    <a class="nav-link" href="#stmtnode">Personal Project</a>
                 </li>
                 <li class="nav-item short active">
                     <a class="nav-link" href="#master">Master</a>
@@ -64,13 +64,13 @@
                             title="Short version of Curriculum" onclick="onShortPaper()">
                             <input type="radio" name="options" id="option1">Short</input>
                         </label>
-                        <label class="btn btn-secondary btn-sm btn-outline-warning medium-button" data-toggle="tooltip" data-placement="bottom" title="Medium version of Curriculum"
-                            onclick="onMediumPaper()">
-                            <input type="radio" name="options" id="option2">Medium</input>
+                        <label class="btn btn-secondary btn-sm btn-outline-warning medium-button active" data-toggle="tooltip" data-placement="bottom"
+                            title="Medium version of Curriculum" onclick="onMediumPaper()">
+                            <input type="radio" name="options" id="option2" checked>Medium</input>
                         </label>
-                        <label class="btn btn-secondary btn-sm btn-outline-success full-button active" data-toggle="tooltip" data-placement="bottom"
-                            title="Complete version of Curriculum" onclick="onFullPaper()">
-                            <input type="radio" name="options" id="option3" checked>Full</input>
+                        <label class="btn btn-secondary btn-sm btn-outline-success full-button" data-toggle="tooltip" data-placement="bottom" title="Complete version of Curriculum"
+                            onclick="onFullPaper()">
+                            <input type="radio" name="options" id="option3">Full</input>
                         </label>
                     </div>
                 </li>
@@ -84,6 +84,33 @@
     </nav>
 
     <div class="container">
+
+        <section class="welcome full-only">
+            <h1 class="display-3">Full Version</h1>
+            <p class="lead">This is the full version of the Bernardo Breder curriculum. You can change the version at right top of this page.
+                This version has all works and projects registed by my name with yours references. If your have same doubt
+                about one, please send email to
+                <a href="mailto:bernardobreder@gmail.com">bernardobreder@gmail.com</a>
+            </p>
+        </section>
+
+        <section class="welcome medium-only">
+            <h1 class="display-3">Medium Version</h1>
+            <p class="lead">This is the medium version of the Bernardo Breder curriculum recommended if you not know me. You can change the
+                version at right top of this page. This version has same works and projects registed by my name with yours
+                references. If your have same doubt about one, please send email to
+                <a href="mailto:bernardobreder@gmail.com">bernardobreder@gmail.com</a>
+            </p>
+        </section>
+
+        <section class="welcome short-only">
+            <h1 class="display-3">Short Version</h1>
+            <p class="lead">This is the short version of the Bernardo Breder curriculum. You can change the version at right top of this
+                page. This version has the main thinks about me. If your have same doubt about one, please send email to
+                <a href="mailto:bernardobreder@gmail.com">bernardobreder@gmail.com</a>
+            </p>
+        </section>
+
         <section class="profile short">
             <h1 id="profile">Profile</h1>
             <div class="row">
@@ -1949,7 +1976,7 @@
             </dl>
         </section>
 
-        <section class="reference full">
+        <section class="reference short">
             <h1 id="reference">References</h1>
             <references>
                 <p>
