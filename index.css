@@ -130,6 +130,6 @@ time, label {
         display: none;
     }
     .welcome {
-        display: none;
+        display: none !important;
     }
 }
