@@ -132,4 +132,7 @@ time, label {
     .welcome {
         display: none !important;
     }
+    .break-page {
+        page-break-before: always;
+    }
 }
