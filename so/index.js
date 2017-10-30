@@ -28,7 +28,7 @@ function onBody() {
         $.ajax({
             url: url,
         }).done(function (data) {
-            $(item).replaceAll(data);
+            $(item).replaceWith(data);
             onBody()
         });
     })
