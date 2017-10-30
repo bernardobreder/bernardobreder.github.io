@@ -1,178 +1,172 @@
 <dl class="row box">
-        <import src="class-mng.html"></import>
+    <import src="class-mng.html"></import>
 
-        <dt class="col-sm-3">Gerenciador de Memória</dt>
-        <dd class="col-sm-9">O gerenciador de memória tem o papel de fazer gestão do espaço real da memória para a alocação estática para
-            as thread criadas e dinamica para as instancia de classes a serem inicilizada. As classes devem ser alocadas
-            pelo pool de memória para classes e objetos de tamanho dinâmico devem ser alocado por espaço de memória
-            para objetos dinâmico.</dd>
+    <dt class="col-sm-3">Gerenciador de Memória</dt>
+    <dd class="col-sm-9">O gerenciador de memória tem o papel de fazer gestão do espaço real da memória para a alocação estática para as thread
+        criadas e dinamica para as instancia de classes a serem inicilizada. As classes devem ser alocadas pelo pool de memória
+        para classes e objetos de tamanho dinâmico devem ser alocado por espaço de memória para objetos dinâmico.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Processo</dt>
-        <dd class="col-sm-9">O gerenciador de processo irá controlar quais processos estão aberto em execução o que ele está utilizando.</dd>
+    <dt class="col-sm-3">Gerenciador de Processo</dt>
+    <dd class="col-sm-9">O gerenciador de processo irá controlar quais processos estão aberto em execução o que ele está utilizando.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Thread</dt>
-        <dd class="col-sm-9">Gerenciamento de Thread criado pelos processos com sua memória estático previamente alocada.</dd>
+    <dt class="col-sm-3">Gerenciador de Thread</dt>
+    <dd class="col-sm-9">Gerenciamento de Thread criado pelos processos com sua memória estático previamente alocada.</dd>
 
-        <dt class="col-sm-3">Banco de Dados</dt>
-        <dd class="col-sm-9">
-            <p>Sistema de banco de dados estruturado compartilhado para os processos para gerenciar e administrar acesso
-                aos dados de aplicação instaladas.</p>
-            <dl class="row">
-                <dt class="col-sm-3">Gerenciador de Transação</dt>
-                <dd class="col-sm-9">A gerencia de transação tem o papel de gerenciar marcos de mudanças atomicas nos dados do sistema
-                    e aplicação de tal forma a garantir o isolamento de transação, restauração caso haja erro e recuperação
-                    dos dados em falha total do sistema.</dd>
-            </dl>
-        </dd>
+    <dt class="col-sm-3">Banco de Dados</dt>
+    <dd class="col-sm-9">
+        <p>Sistema de banco de dados estruturado compartilhado para os processos para gerenciar e administrar acesso aos dados
+            de aplicação instaladas.</p>
+        <dl class="row">
+            <dt class="col-sm-3">Gerenciador de Transação</dt>
+            <dd class="col-sm-9">A gerencia de transação tem o papel de gerenciar marcos de mudanças atomicas nos dados do sistema e aplicação
+                de tal forma a garantir o isolamento de transação, restauração caso haja erro e recuperação dos dados em
+                falha total do sistema.</dd>
+        </dl>
+    </dd>
 
-        <dt class="col-sm-3">Gerenciador de Notificação</dt>
-        <dd class="col-sm-9">Gerencia de notificação entre sistemas, apicações e hardware.</dd>
+    <dt class="col-sm-3">Gerenciador de Notificação</dt>
+    <dd class="col-sm-9">Gerencia de notificação entre sistemas, apicações e hardware.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Atualização</dt>
-        <dd class="col-sm-9">Gerencia a atualização do sistema, aplicações, banco de dados e cache</dd>
+    <dt class="col-sm-3">Gerenciador de Atualização</dt>
+    <dd class="col-sm-9">Gerencia a atualização do sistema, aplicações, banco de dados e cache</dd>
 
-        <dt class="col-sm-3">Linguagem de Programação</dt>
-        <dd class="col-sm-9">
-            <p>Linguagem de programação apropriada para os requisitos do sistema adaptado as ferramentas.</p>
-            <dl class="row">
-                <dt class="col-sm-3">Lambda</dt>
-                <dd class="col-sm-9">A linguagem de programação deve ter recurso de lambda para conversão e manipulação de dados para
-                    auxiliar o desenvolvimento. Esse recurso deve fazer bom uso de memória e processamento paralelo
-                    se for preciso.</dd>
-            </dl>
-        </dd>
+    <dt class="col-sm-3">Linguagem de Programação</dt>
+    <dd class="col-sm-9">
+        <p>Linguagem de programação apropriada para os requisitos do sistema adaptado as ferramentas.</p>
+        <dl class="row">
+            <dt class="col-sm-3">Lambda</dt>
+            <dd class="col-sm-9">A linguagem de programação deve ter recurso de lambda para conversão e manipulação de dados para auxiliar o desenvolvimento.
+                Esse recurso deve fazer bom uso de memória e processamento paralelo se for preciso.</dd>
+        </dl>
+    </dd>
 
-        <dt class="col-sm-3">Ambiente de Desenvolvimento</dt>
-        <dd class="col-sm-9">Criar um ambiente de desenvolvimento para auxiliar o desenvolvimento de apicações para essa plataforma</dd>
+    <dt class="col-sm-3">Ambiente de Desenvolvimento</dt>
+    <dd class="col-sm-9">Criar um ambiente de desenvolvimento para auxiliar o desenvolvimento de apicações para essa plataforma</dd>
 
-        <dt class="col-sm-3">Coletor de Lixo</dt>
-        <dd class="col-sm-9">Coletor de objetos não mais usado e liberá-lo para a gerencia de memória. Esse coletor pode ser implementado
-            por contador de referencia, mark-and-scan para ilhas de objetos e cache antigos.</dd>
+    <dt class="col-sm-3">Coletor de Lixo</dt>
+    <dd class="col-sm-9">Coletor de objetos não mais usado e liberá-lo para a gerencia de memória. Esse coletor pode ser implementado por contador
+        de referencia, mark-and-scan para ilhas de objetos e cache antigos.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Lock</dt>
-        <dd class="col-sm-9">O gerenciador de lock tem o papel de dispor de ferramentas de lock para o sistema e aplicações e também a
-            gerencia de deadlock.</dd>
+    <dt class="col-sm-3">Gerenciador de Lock</dt>
+    <dd class="col-sm-9">O gerenciador de lock tem o papel de dispor de ferramentas de lock para o sistema e aplicações e também a gerencia de
+        deadlock.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Modificação</dt>
-        <dd class="col-sm-9">A gerencia de moficação tem a responsabilidade de gerenciar as mudanças dos dados do sistema e aplicação
-            de tal forma a minimizar o espaço de armazenamento e de gestão de mudanças. Essa gerencia reduz muito
-            o espaço de armazenamento quando é apregado adequadamente e possibilita uma gestão das modificações efetuadas
-            possibilitando a reversão, merge e entre outras operações em cima de arquvios.</dd>
+    <dt class="col-sm-3">Gerenciador de Modificação</dt>
+    <dd class="col-sm-9">A gerencia de moficação tem a responsabilidade de gerenciar as mudanças dos dados do sistema e aplicação de tal forma
+        a minimizar o espaço de armazenamento e de gestão de mudanças. Essa gerencia reduz muito o espaço de armazenamento
+        quando é apregado adequadamente e possibilita uma gestão das modificações efetuadas possibilitando a reversão, merge
+        e entre outras operações em cima de arquvios.</dd>
 
-        <dt class="col-sm-3">Prolog</dt>
-        <dd class="col-sm-9">A máquina de prolog pode ser uma ferramenta importante para melhor as aplicações do sistema com base no que
-            faz melhor.
-        </dd>
+    <dt class="col-sm-3">Prolog</dt>
+    <dd class="col-sm-9">A máquina de prolog pode ser uma ferramenta importante para melhor as aplicações do sistema com base no que faz melhor.
+    </dd>
 
-        <dt class="col-sm-3">Mineração de Dados</dt>
-        <dd class="col-sm-9">A mineração de dados de todas as aplicações pode auxiliar na aplicação tornando as aplicações mais proativa.</dd>
+    <dt class="col-sm-3">Mineração de Dados</dt>
+    <dd class="col-sm-9">A mineração de dados de todas as aplicações pode auxiliar na aplicação tornando as aplicações mais proativa.</dd>
 
-        <dt class="col-sm-3">Rede Neurais</dt>
-        <dd class="col-sm-9">A Rede Neurais aplicada nas aplicações pode auxiliar em aplicações mais proativa.</dd>
+    <dt class="col-sm-3">Rede Neurais</dt>
+    <dd class="col-sm-9">A Rede Neurais aplicada nas aplicações pode auxiliar em aplicações mais proativa.</dd>
 
-        <dt class="col-sm-3">Segurança</dt>
-        <dd class="col-sm-9">Criptografia de dados, Resumo de Arquivo, Transferencia de Dados, Big Integer, Protocolo SSL, Assinatura
-            digital</dd>
+    <dt class="col-sm-3">Segurança</dt>
+    <dd class="col-sm-9">Criptografia de dados, Resumo de Arquivo, Transferencia de Dados, Big Integer, Protocolo SSL, Assinatura digital
+    </dd>
 
-        <dt class="col-sm-3">Sistema de Arquivo Estruturado</dt>
-        <dd class="col-sm-9">O sistema de arquivo de forma textual e estruturado permite ter um melhor espaço de armazenamento em função
-            da gerencia de modificação e da abstração com que é feito o conteúdo na aplicação. Os arquivos devem
-            armazenar somente o que o usuário precisa para preencher o documento de uma aplicação.</dd>
+    <dt class="col-sm-3">Sistema de Arquivo Estruturado</dt>
+    <dd class="col-sm-9">O sistema de arquivo de forma textual e estruturado permite ter um melhor espaço de armazenamento em função da gerencia
+        de modificação e da abstração com que é feito o conteúdo na aplicação. Os arquivos devem armazenar somente o que
+        o usuário precisa para preencher o documento de uma aplicação.</dd>
 
-        <dt class="col-sm-3">Gerencia de Mensagem</dt>
-        <dd class="col-sm-9">Uma gerenciar de mensagem para troca de mensagem entre usuários da tal forma a facilitar a comunicação. Grupos
-            de assuntos devem ser levado em consideração para melhorar a organização dessas mensagem. Um conjunto
-            de features para gerencia de mensagem pelo administrador do grupo pode ser apropriado para que as mensagem
-            fiquem bem organizadas e de facil consulta.</dd>
+    <dt class="col-sm-3">Gerencia de Mensagem</dt>
+    <dd class="col-sm-9">Uma gerenciar de mensagem para troca de mensagem entre usuários da tal forma a facilitar a comunicação. Grupos de assuntos
+        devem ser levado em consideração para melhorar a organização dessas mensagem. Um conjunto de features para gerencia
+        de mensagem pelo administrador do grupo pode ser apropriado para que as mensagem fiquem bem organizadas e de facil
+        consulta.</dd>
 
-        <dt class="col-sm-3">Serialização de Objetos</dt>
-        <dd class="col-sm-9">Serialização de qualquer objetos para permitir que os processos descanse quando necessário. Para objetos
-            que não podem ser serializado, uma inicialização e entrada no estado de descanso deve ser implementado
-            para possibilitar a liberação da aplicação da memória.</dd>
+    <dt class="col-sm-3">Serialização de Objetos</dt>
+    <dd class="col-sm-9">Serialização de qualquer objetos para permitir que os processos descanse quando necessário. Para objetos que não podem
+        ser serializado, uma inicialização e entrada no estado de descanso deve ser implementado para possibilitar a liberação
+        da aplicação da memória.</dd>
 
-        <dt class="col-sm-3">Gerenciador de Tarefas</dt>
-        <dd class="col-sm-9">Uma gerencia de tarefas deve ser bem contruida pensando em um compartilhamento com todos os processos, onde
-            as tarefas possui a descrição de sua prioridade e de onde irá impactar a sua atualização ou execução.
-            Dependendo do tipo de tarefa como de interface, a atualização pode ser postergada em função da aplicação
-            estar minimizada.</dd>
+    <dt class="col-sm-3">Gerenciador de Tarefas</dt>
+    <dd class="col-sm-9">Uma gerencia de tarefas deve ser bem contruida pensando em um compartilhamento com todos os processos, onde as tarefas
+        possui a descrição de sua prioridade e de onde irá impactar a sua atualização ou execução. Dependendo do tipo de
+        tarefa como de interface, a atualização pode ser postergada em função da aplicação estar minimizada.</dd>
 
-        <dt class="col-sm-3">App Package</dt>
-        <dd class="col-sm-9">
-            <p>Gestão de Aplicações instaladas no sistema e controle de acesso ao sistema. Esse tópico traz a responsabilidade
-                para a aplicação só usar os dados do usuário se ele deu permissão para isso.</p>
-            <dl class="row">
-                <dt class="col-sm-3">Sandbox</dt>
-                <dd class="col-sm-9">Sistema de arquivo interno com total acesso aos dados e um acesso restrito ao sistema de arquivo
-                    externo a aplicação controlando tudo que é lido e modificado, podendo verificar e reverter todas
-                    as mudanças efetuada pela aplicação.</dd>
-            </dl>
-        </dd>
+    <dt class="col-sm-3">App Package</dt>
+    <dd class="col-sm-9">
+        <p>Gestão de Aplicações instaladas no sistema e controle de acesso ao sistema. Esse tópico traz a responsabilidade para
+            a aplicação só usar os dados do usuário se ele deu permissão para isso.</p>
+        <dl class="row">
+            <dt class="col-sm-3">Sandbox</dt>
+            <dd class="col-sm-9">Sistema de arquivo interno com total acesso aos dados e um acesso restrito ao sistema de arquivo externo a aplicação
+                controlando tudo que é lido e modificado, podendo verificar e reverter todas as mudanças efetuada pela aplicação.</dd>
+        </dl>
+    </dd>
 
-        <dt class="col-sm-3">Compress</dt>
-        <dd class="col-sm-9">Compressão de dados com o objetivo de reduzir o espaço de armazenamento em função da coleção de dados existente
-            no sistema de arquivo. Analisar o que poderá ser feito para comprimir todos os dados de texto considerando
-            a mudança da tabela de index com o tempo.</dd>
+    <dt class="col-sm-3">Compress</dt>
+    <dd class="col-sm-9">Compressão de dados com o objetivo de reduzir o espaço de armazenamento em função da coleção de dados existente no sistema
+        de arquivo. Analisar o que poderá ser feito para comprimir todos os dados de texto considerando a mudança da tabela
+        de index com o tempo.</dd>
 
-        <dt class="col-sm-3">Imprimir</dt>
-        <dd class="col-sm-9">A exportação para papel é um recurso importante para retirar a informação do meio digital para o meio real.</dd>
+    <dt class="col-sm-3">Imprimir</dt>
+    <dd class="col-sm-9">A exportação para papel é um recurso importante para retirar a informação do meio digital para o meio real.</dd>
 
-        <dt class="col-sm-3">Sound</dt>
-        <dd class="col-sm-9">Gestão de musica e som do sistema.</dd>
+    <dt class="col-sm-3">Sound</dt>
+    <dd class="col-sm-9">Gestão de musica e som do sistema.</dd>
 
-        <dt class="col-sm-3">Calendario</dt>
-        <dd class="col-sm-9">Gestão de data, calendario, mês, formatação, timezone, férias.</dd>
+    <dt class="col-sm-3">Calendario</dt>
+    <dd class="col-sm-9">Gestão de data, calendario, mês, formatação, timezone, férias.</dd>
 
-        <dt class="col-sm-3">Collection</dt>
-        <dd class="col-sm-9">Estrutura de dados de coleção de dados otimizado com a gerencia de memória.</dd>
+    <dt class="col-sm-3">Collection</dt>
+    <dd class="col-sm-9">Estrutura de dados de coleção de dados otimizado com a gerencia de memória.</dd>
 
-        <dt class="col-sm-3">Algoritmos</dt>
-        <dd class="col-sm-9">Algoritmos de biblioteca uteis para o sistema e aplicações melhorando o reuso de código.</dd>
+    <dt class="col-sm-3">Algoritmos</dt>
+    <dd class="col-sm-9">Algoritmos de biblioteca uteis para o sistema e aplicações melhorando o reuso de código.</dd>
 
-        <dt class="col-sm-3">Concorrencia</dt>
-        <dd class="col-sm-9">Biblioteca de classes de controle de concorrencia para reuso pelo sistema e pela aplicação.</dd>
+    <dt class="col-sm-3">Concorrencia</dt>
+    <dd class="col-sm-9">Biblioteca de classes de controle de concorrencia para reuso pelo sistema e pela aplicação.</dd>
 
-        <dt class="col-sm-3">Log</dt>
-        <dd class="col-sm-9">Gerenciamento de log para depuração e entendimento das mudanças ocorridas. É importante que a ferramenta
-            seja util para investigação de falhas ocorridas.</dd>
+    <dt class="col-sm-3">Log</dt>
+    <dd class="col-sm-9">Gerenciamento de log para depuração e entendimento das mudanças ocorridas. É importante que a ferramenta seja util para
+        investigação de falhas ocorridas.</dd>
 
-        <dt class="col-sm-3">Test</dt>
-        <dd class="col-sm-9">Arquitetura de Teste para as aplicações com o objetivo de melhor a qualidade das aplicações nela desenvolvida.</dd>
+    <dt class="col-sm-3">Test</dt>
+    <dd class="col-sm-9">Arquitetura de Teste para as aplicações com o objetivo de melhor a qualidade das aplicações nela desenvolvida.</dd>
 
-        <dt class="col-sm-3">Validation</dt>
-        <dd class="col-sm-9">Biblioteca de validação de dados e parametros com o objetivo de melhor a qualidade das aplicações nela desenvolvida.</dd>
+    <dt class="col-sm-3">Validation</dt>
+    <dd class="col-sm-9">Biblioteca de validação de dados e parametros com o objetivo de melhor a qualidade das aplicações nela desenvolvida.</dd>
 
-        <dt class="col-sm-3">Regex</dt>
-        <dd class="col-sm-9">Biblioteca de Regex com o objetivo de melhor a forma como é feita consulta nas aplicações.</dd>
+    <dt class="col-sm-3">Regex</dt>
+    <dd class="col-sm-9">Biblioteca de Regex com o objetivo de melhor a forma como é feita consulta nas aplicações.</dd>
 
-        <dt class="col-sm-3">Interface Gráfica</dt>
-        <dd class="col-sm-9">
-            <dl class="row">
-                <dt class="col-sm-3">Components</dt>
-                <dd class="col-sm-9">Componentes gráficos</dd>
+    <dt class="col-sm-3">Interface Gráfica</dt>
+    <dd class="col-sm-9">
+        <dl class="row">
+            <dt class="col-sm-3">Components</dt>
+            <dd class="col-sm-9">Componentes gráficos</dd>
 
-                <dt class="col-sm-3">Layout Manager</dt>
-                <dd class="col-sm-9">Constraints</dd>
+            <dt class="col-sm-3">Layout Manager</dt>
+            <dd class="col-sm-9">Constraints</dd>
 
-                <dt class="col-sm-3">User Preference</dt>
-                <dd class="col-sm-9">Preferencia de usuário para que as aplicações possam ser fechadas e reabertas com o mesmo estado
-                    anterior, fazendo com que seja possível liberar a memória de uma aplicação e restauração sem
-                    afetar a interface do usuário.</dd>
-            </dl>
-        </dd>
+            <dt class="col-sm-3">User Preference</dt>
+            <dd class="col-sm-9">Preferencia de usuário para que as aplicações possam ser fechadas e reabertas com o mesmo estado anterior, fazendo
+                com que seja possível liberar a memória de uma aplicação e restauração sem afetar a interface do usuário.</dd>
+        </dl>
+    </dd>
 
-        <dt class="col-sm-3">Codec</dt>
-        <dd class="col-sm-9">Biblioteca de Codec como Base64, Audio, Zip, Cripto, ...</dd>
+    <dt class="col-sm-3">Codec</dt>
+    <dd class="col-sm-9">Biblioteca de Codec como Base64, Audio, Zip, Cripto, ...</dd>
 
-        <dt class="col-sm-3">WebService</dt>
-        <dd class="col-sm-9">Biblioteca de webservice para auxiliar aplicaçoes que usa dados da internet para fonte de dados.</dd>
+    <dt class="col-sm-3">WebService</dt>
+    <dd class="col-sm-9">Biblioteca de webservice para auxiliar aplicaçoes que usa dados da internet para fonte de dados.</dd>
 
-        <dt class="col-sm-3">Structure Service</dt>
-        <dd class="col-sm-9">Biblioteca de serviço proprietário da plataforma de tal forma a ficar mais facil de desenvolver com essa
-            plataforma.</dd>
+    <dt class="col-sm-3">Structure Service</dt>
+    <dd class="col-sm-9">Biblioteca de serviço proprietário da plataforma de tal forma a ficar mais facil de desenvolver com essa plataforma.
+    </dd>
 
-        <dt class="col-sm-3">Internacionalization</dt>
-        <dd class="col-sm-9">Internacionalização das aplicações com o objetivo de ficar mais próximo a realidade do usuário.</dd>
+    <dt class="col-sm-3">Internacionalization</dt>
+    <dd class="col-sm-9">Internacionalização das aplicações com o objetivo de ficar mais próximo a realidade do usuário.</dd>
 
-        <dt class="col-sm-3">Cache</dt>
-        <dd class="col-sm-9">Infraestrutura de cache auxiliado pela gerencia de memória</dd>
-    </dl>
+    <dt class="col-sm-3">Cache</dt>
+    <dd class="col-sm-9">Infraestrutura de cache auxiliado pela gerencia de memória</dd>
+</dl>
