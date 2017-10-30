@@ -1,18 +1,16 @@
 
 function buildTree() {
-    let handler = function () {
-        let parent = $(this).parent()
-        if (parent.hasClass("open")) {
-            parent.removeClass("open")
-            parent.find("li.open").removeClass("open")
-        } else {
-            parent.addClass("open")
-        }
-    }
     $("ul.tree a")
         .css('cursor', 'pointer')
-        .click(handler)
-        .bind("tap", handler)
+        .click(function () {
+            let parent = $(this).parent()
+            if (parent.hasClass("open")) {
+                parent.removeClass("open")
+                parent.find("li.open").removeClass("open")
+            } else {
+                parent.addClass("open")
+            }
+        })
 }
 
 function onBody() {
