@@ -1,3 +1,9 @@
+body {
+    background-image: url("/pub/img/bgcolor.png");
+    background-position: left top;
+    background-repeat: repeat;
+}
+
 .prettyprint {
     padding: 10px;
 }

@@ -1,5 +1,5 @@
 body {
-    background-image: url("pub/img/bgcolor.png");
+    background-image: url("/pub/img/bgcolor.png");
     background-position: left top;
     background-repeat: repeat;
 }
